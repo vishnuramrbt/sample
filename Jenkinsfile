@@ -16,7 +16,7 @@ pipeline {
    }
 	   stage ('test') {
 		   steps {
-			   sh 'python manage.py runserver 0.0.0.0:9050  &'
+			   sh 'python manage.py runserver 0.0.0.0:9050  -D&'
 	   }
 	   }
 	   }
