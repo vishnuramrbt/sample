@@ -16,7 +16,7 @@ pipeline {
    }
 	   stage ('test') {
 		   steps {
-			   sh 'nohup python manage.py runserver 0.0.0.0:9050  -D &'
+			   sh 'nohup python manage.py runserver 0.0.0.0:9050   &'
 	   }
 	   }
 	   }
