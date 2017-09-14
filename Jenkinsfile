@@ -11,7 +11,7 @@ pipeline {
    stage('status') {
 	   steps {
 		echo 'site status check'
-		sh 'curl -s -o /dev/null -I -w "%{http_code}" http://admin.care-konnect.com
+		sh 'curl -s -o /dev/null -I -w "%{http_code}" http://admin.care-konnect.com'
 		sh 'curl -s -o /dev/null -I -w "%{http_code}" http://admin.care-konnect.com:443'
 	}
    }
