@@ -1,15 +1,8 @@
-pipeline {
-    agent any
-
-    stages {
-        stage('Build') {
+   node (
+   stage('Build') {
             steps {
-		echo $date
-		echp $pwd 
-		
-                echo 'Building..'
+                echo 'Building...'
+                sh 'git status'
             }
         }
-               }
-       
-    }
+	}
