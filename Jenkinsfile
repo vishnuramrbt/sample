@@ -1,19 +1,19 @@
 pipeline {
     agent any
-   stages {
+  
+  stages {
    stage('Build') {
 	   steps {
                 echo 'Building...'
                 sh 'git pull https://github.com/vishnuramrbt/sample.git'
-		sh 'cd sample'
+				sh 'cd sample'
 	   }
-                   }
-
-	   stage ('Test') {
-		   steps {
-	  echo 'Testing ...'
-	  sh 'python manage.py migrate'
+          }
+   stage ('Test') {
+		steps {
+				echo 'Testing ...'
+				sh 'python manage.py migrate'
 	}
 	   }
-
+}
 }
