@@ -1,8 +1,6 @@
    node {
    stage('Build') {
-            steps {
-                echo 'Building...'
+                        echo 'Building...'
                 sh 'git status'
-            }
-        }
+                   }
 	}
