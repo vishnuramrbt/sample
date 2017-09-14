@@ -8,15 +8,15 @@ pipeline {
                 sh 'git pull https://github.com/vishnuramrbt/sample.git'
 				   }
           }
-   stage('pythonchecj') {
+   stage('check') {
 	   steps {
 		echo 'migrating session in progress'
 		sh 'python manage.py migrate'
 	}
    }
-	   stage ('project run') {
+	   stage ('test') {
 		   steps {
-			   sh 'python manage.py run server 0.0.0.0:9050  &'
+			   sh 'python manage.py runserver 0.0.0.0:9050  &'
 	   }
 	   }
 	   }
