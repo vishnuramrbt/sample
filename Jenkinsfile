@@ -4,15 +4,19 @@ pipeline {
   stages {
    stage('Build') {
 	   steps {
-                echo 'Building...'
+                echo 'Latest codebase rebase in progress'
                 sh 'git pull https://github.com/vishnuramrbt/sample.git'
 				   }
           }
-   stage ('Test') {
+   stage ('pythonchecj') {
 		steps {
-				echo 'Testing ...'
+				echo 'migrating session in progress'
 				sh 'python manage.py migrate'
 	}
+	   stage ('project run') {
+		   steps {
+			   sh 'python manage.py run server 0.0.0.0:9050  &'
 	   }
-}
+	   }
+	   }
 }
