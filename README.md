@@ -11,7 +11,8 @@ https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/
 
 
 ```
-Before proceeding with docker image build . Make sure the config file with correct ip and also check the environmet details in Dockerfile
+Before proceeding with build preocess.Make sure the config files in config folder  with correct ip details 
+and also set the environmet values in Dockerfile
 ```
 
  ```
