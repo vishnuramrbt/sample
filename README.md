@@ -11,8 +11,13 @@ https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/
 
  ```
   step 1 : docker build -t <name> . 
-    note : the current directory should have Dockerfile to proceed build
  
-  example : docker build -t adminibot:dev . 
-  
+ example : docker build -t adminibot:dev . 
+  note : the current directory should have Dockerfile to proceed build
   ```
+ ```
+ step 2 : docker run -it --name <name> -p <port>:<port> <image-name>
+ 
+ example : docker run -it --name=AdminiBot -p 5050:5050 adminibot:dev
+ 
+ ```
