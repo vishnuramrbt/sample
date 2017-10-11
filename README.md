@@ -7,7 +7,7 @@
 https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/
 ```
 
-### Docker Image Build step for AdminiBot
+### Docker support for AdminiBot
 
 
 ```
