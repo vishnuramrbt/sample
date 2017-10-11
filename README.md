@@ -6,3 +6,11 @@
 ```
 https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/
 ```
+
+### Docker Image Build step for AdminiBot
+
+  docker build -t <name> .
+  ```
+  example : docker build -t adminibot:dev . 
+  
+  ```
