@@ -1,14 +1,6 @@
 # AdminiBot
 
-## Getting Started for Docker Installation
-
-#### For UBUNTU Install - refer Below Link
-```
-https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/
-```
-
-### Docker support for AdminiBot
-
+### Docker support added, build steps shared below
 
 ```
 Before proceeding with build preocess.Make sure the config files in config folder  with correct ip details 
