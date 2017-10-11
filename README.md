@@ -9,6 +9,10 @@ https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/
 
 ### Docker Image Build step for AdminiBot
 
+
+```Before proceeding with docker image build . Make sure the config file with correct ip and also check the environmet details in Dockerfile
+```
+
  ```
   step 1 : docker build -t <name> . 
  
