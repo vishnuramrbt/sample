@@ -19,7 +19,7 @@ and also set the environmet values in Dockerfile
   step 1 : docker build -t <name> . 
  
  example : docker build -t adminibot:dev . 
-  note : the current directory should have Dockerfile to proceed build
+ note : the current directory should have Dockerfile to proceed build
   ```
  ```
  step 2 : docker run -it --name <name> -p <port>:<port> <image-name>
